@@ -2,10 +2,21 @@
 <openerp>
   <data>
 
-    <record id="action_action_todo" model="ir.actions.act_window">
+    <record model="ir.ui.view" id="tree_view_action_todo">
         <field name="name">Actions</field>
-        <field name="res_model">action.todo</field>
+        <field name="model">action.todo</field>
+        <field name="arch" type="xml">
+            <tree colors="grey:done==True">
+                <field name="name"/>
+                <field name="done"/>
+            </tree>
+        </field>
     </record>
+
+    <act_window id="action_action_todo"
+        name="Actions"
+        res_model="action.todo"
+        />
 
     <menuitem id="menu_action_todo"
         name="Actions"
