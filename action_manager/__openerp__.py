@@ -1,3 +1,5 @@
 {
-    'name': 'Action manager App',
+    'name': 'Action Manager App',
+    'summary': 'Manage your activities',
+    'depends': ['contacts'],
 }
