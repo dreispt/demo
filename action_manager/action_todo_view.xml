@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<openerp>
+  <data>
+
+    <record id="action_action_todo" model="ir.actions.act_window">
+        <field name="name">Actions</field>
+        <field name="res_model">action.todo</field>
+    </record>
+
+    <menuitem id="menu_action_todo"
+        name="Actions"
+        parent="mail.mail_my_stuff"
+        action="action_action_todo"
+        />
+
+  </data>
+</openerp>
